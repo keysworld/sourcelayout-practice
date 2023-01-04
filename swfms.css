@@ -1,0 +1,174 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    background: whitesmoke;
+    font-family: 'roboto', sans-serif, helvetica;
+    color: rgb(22, 22, 52);
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  header {
+    height: 80px;
+    padding: 20px 0;
+    background: whitesmoke;
+    color: rgb(22, 22, 52);
+    padding-bottom: 80px;
+    display: block;
+    font-family: 'roboto', sans-serif, helvetica;
+  }
+
+  nav * {
+    float: left;
+    width: 10%;
+    color: white;
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    width: 65%;
+    list-style: none;
+  }
+
+  header h2 {
+    float: left;
+    margin: 0 30px;
+    width: 30%;
+  }
+
+  header button {
+    float: right;
+    margin: -30px 30px;
+    width: 8%;
+  }
+
+  button {
+    background: rgb(22, 22, 52);
+    color: white;
+  }
+
+  main section {
+    float: left;
+    width: 50%;
+    height: 600px;
+  }
+
+  main > section {
+    padding: 100px;
+  }
+
+  .bigtext {
+    font-size: 55px;
+    font-weight: bolder;
+  }
+
+  .underneath {
+    font-size: larger;
+  }
+  
+  section section {
+    height: 300px;
+    float: left;
+    width: 25%;
+    padding: 70px 20px 0px 20px;
+  }
+
+  .foot {
+    height: 250px;
+    float: left;
+    width: 100%;
+  }
+
+  img {
+    width: fit-content;
+  }
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  @media (min-width: 300px) and (max-width: 844px) {
+    nav, header button {
+        display: none;
+    }
+
+    header {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        float: none;
+        width: 200%;
+        padding-left: 230px;
+        border-bottom: 3px solid lightslategray;
+    }
+    main section {
+        float: none;
+        width: fit-content;
+        height: 100%;
+      }
+
+    span {
+        font-size: large;
+    }
+
+    main > section {
+        padding: 10px;
+        width: 680px;
+        float: none;
+        height: fit-content;
+        font-size: larger;
+      }
+
+    .mainimg {
+        width: min-content;
+    }
+
+    .underneath {
+        font-size: 35px;
+        width: fit-content
+    }
+
+    input, button {
+        width: 660px;
+        height: 50px;
+        font-size: x-large;
+    }
+
+    section section {
+        width: 660px;
+        height: 200px;
+        float: none;
+        padding: 5px;
+        text-align: center;
+      }
+
+      .foot {
+        width: 700px;
+        height: 200px;
+        float: left;
+        border-top: 3px solid lightslategray;
+      }
+  }
